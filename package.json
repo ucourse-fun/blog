@@ -8,5 +8,11 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "vuetify": "1.5.22",
+    "webpack-node-externals": "^1.7.2"
   }
 }
