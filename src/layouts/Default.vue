@@ -1,14 +1,7 @@
 <template>
   <v-app>
+    <Navbar />
     <div class="custom-layout">
-      <header class="header">
-        <strong>
-          <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-        </strong>
-        <nav class="nav">
-          <g-link class="nav__link" to="/">Home</g-link>
-          <g-link class="nav__link" to="/about/">About</g-link>
-        </nav>
       </header>
       <slot/>
     </div>
@@ -23,6 +16,16 @@ query {
 }
 </static-query>
 
+<script>
+import Navbar from '~/components/Navbar.vue'
+
+export default {
+  components: {
+    Navbar,
+  }
+}
+
+</script>
 <style lang="scss" scoped>
   $margin-size: 20px;
 
