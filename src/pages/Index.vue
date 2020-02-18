@@ -6,17 +6,14 @@
         </div>
         <div class='imfd text-xs-right pr-2 mb-4'>
             <p>
-                Tell me and I forget. 
-            </p>
-            <p>
-                Teach me and I remember. 
-            </p>
-            <p>
+                Tell me and I forget. <br />
+                Teach me and I remember. <br />
                 Involve me and I learn.
             </p>
             <p>
                 - Benjamin Franklin  
             </p>
+                <v-btn outline color="white"><span class='ls-4'>訂閱</span></v-btn>
         </div>
     </WavySection>
     <section class='sec2'>
@@ -272,5 +269,9 @@ section.sec2 {
     font-family: 'cwTeXFangSong', serif;
     font-weight: 700;
     font-size: 80px;
+}
+.ls-4 {
+    letter-spacing: 1em;
+    padding-left: 1em;
 }
 </style>
