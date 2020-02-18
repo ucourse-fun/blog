@@ -14,7 +14,7 @@ export default function (Vue, { router, head, isClient }) {
   })
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Leckerli+One&display=swap&text=UCourse'
+    href: 'https://fonts.googleapis.com/css?family=Cabin+Sketch|Cinzel|Leckerli+One|Fredericka+the+Great|IM+Fell+DW+Pica+SC|Italianno|Marcellus+SC&display=swap'
   })
   head.link.push({
     rel: 'stylesheet',
