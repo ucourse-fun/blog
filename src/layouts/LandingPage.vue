@@ -26,20 +26,16 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar dark app color="#209CEE">
+    <v-toolbar dark app dense inverted-scroll flat color="rgba(32,156,238,0.85)">
       <v-toolbar-title class='branding'>
         UCourse
       </v-toolbar-title>
       <v-spacer />
       <v-toolbar-side-icon @click="drawer = !drawer" />
     </v-toolbar>
-    <v-content class='custom-layout'>
-      <v-container>
-      <slot/>
-      </v-container>
-    </v-content>
+    <slot/>
     <!--
-    <div class="custom-layout">
+    <div>
       <slot/>
     </div>
     -->
@@ -64,7 +60,6 @@ export default {
 
 </script>
 <style lang="scss" scoped>
-  $margin-size: 20px;
 
   body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
@@ -76,23 +71,10 @@ export default {
   
   .custom-layout {
     margin: 0 auto;
+    padding: 0;
     width: 100%;
-    margin-top: 20px;
-    padding-left: $margin-size;
-    padding-right: $margin-size;
   }
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: $margin-size;
-    height: 80px;
-  }
-
-  .nav__link {
-    margin-left: $margin-size;
-  }
 .branding {
   font-family: 'Leckerli One', cursive;
   font-size: 20pt;
