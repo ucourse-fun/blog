@@ -157,25 +157,20 @@
                                                      代理海軍部長Modly已經跟部長談過這個話題了
                                                      部長說這些都會是他們探討未來艦隊組成時會檢視的部分
     </p>
-    <v-alert
-      type='success'
-      :value="true"
-    >
-      Hello there
-    </v-alert>
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <MailingListForm />
   </Layout>
 </template>
 
 <script>
+import MailingListForm from '~/components/MailingListForm'
+
 export default {
   metaInfo: {
-    title: 'Hello, world!'
-  }
+    title: '優課坊'
+  },
+  components: {
+    MailingListForm,
+  },
 }
 </script>
 
