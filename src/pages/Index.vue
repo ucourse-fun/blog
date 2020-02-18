@@ -1,16 +1,23 @@
 <template>
   <Layout>
     <WavySection class='white--text'>
-        <p>
-            <span class='sansTitle'>
-                優課坊
-            </span>
-        </p>
-        <p>
-            <span class='serifTitle'>
-                優課坊
-            </span>
-        </p>
+        <div class='italianno text-xs-left pl-2 mb-8'>
+            UCourse.fun
+        </div>
+        <div class='imfd text-xs-right pr-2 mb-4'>
+            <p>
+                Tell me and I forget. 
+            </p>
+            <p>
+                Teach me and I remember. 
+            </p>
+            <p>
+                Involve me and I learn.
+            </p>
+            <p>
+                - Benjamin Franklin  
+            </p>
+        </div>
     </WavySection>
     <section class='sec2'>
 
@@ -195,7 +202,7 @@ section {
     background: #209cee url('../../static/bg30.png');
     background-size: cover;
     width: 100%;
-    height: 150vh;
+    height: 100vh;
 }
 
 #curve {
@@ -213,7 +220,48 @@ section.sec2 {
     height: 100%;
     background: #fff;
 }
-
+.cinzel {
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+.imfd {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #333;
+}
+.marc {
+    font-family: 'Marcellus SC', serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+.fred {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 300;
+    font-size: 50px;
+}
+.ben {
+    font-family: 'Pinyon Script', cursive;
+    font-weight: 300;
+    font-size: 40px;
+}
+.italianno {
+    font-family: 'Italianno', cursive;
+    font-weight: 500;
+    font-size: 40px;
+    text-shadow: 4px 4px 4px #000;
+}
+.leck {
+    font-family: 'Leckerli One', cursive;
+    font-weight: 300;
+    font-size: 40px;
+}
+.cabin {
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 300;
+    font-size: 30px;
+}
 .sansTitle {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 300;
