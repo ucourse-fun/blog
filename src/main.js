@@ -16,4 +16,8 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Leckerli+One&display=swap&text=UCourse'
   })
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Noto+Sans+TC|cwtexfangsong&display=swap&text=優課坊'
+  })
 }
