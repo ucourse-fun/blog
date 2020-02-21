@@ -13,10 +13,13 @@
             <p>
                 - Benjamin Franklin  
             </p>
-                <v-btn outline color="white"><span class='ls-4'>訂閱</span></v-btn>
+                <v-btn outline color="white" @click='dialog=true'><span class='ls-4'>訂閱電子報</span></v-btn>
         </div>
     </WavySection>
     <section class='sec2'>
+    <v-dialog v-model='dialog' max-width='500'>
+        <MailingListForm @close='dialog=false' />
+    </v-dialog>
 
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
@@ -169,7 +172,6 @@
                                                          代理海軍部長Modly已經跟部長談過這個話題了
                                                          部長說這些都會是他們探討未來艦隊組成時會檢視的部分
         </p>
-        <MailingListForm />
     </section>
   </Layout>
 </template>
@@ -180,6 +182,11 @@ import MailingListForm from '~/components/MailingListForm'
 import WavySection from '~/components/WavySection'
 
 export default {
+  data() {
+    return {
+      dialog: false,
+    }
+  },
   metaInfo: {
     title: '優課坊'
   },
