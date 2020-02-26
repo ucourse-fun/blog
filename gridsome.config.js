@@ -6,5 +6,15 @@
 
 module.exports = {
   siteName: 'UCourse',
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Course', // Required
+        baseDir: './content/courses', // Where .md files are located
+        pathPrefix: '/courses', // Add route prefix. Optional
+        template: './src/templates/Course.vue' // Optional
+      }
+    },
+  ]
 }
