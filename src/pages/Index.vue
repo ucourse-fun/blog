@@ -13,7 +13,7 @@
             <p>
                 - Benjamin Franklin  
             </p>
-                <v-btn outline color="white" @click='dialog=true'><span class='ls-4'>訂閱電子報</span></v-btn>
+                <v-btn outline color="white" @click='dialog=true'><span class='ls-4'>訂閱課程快訊</span></v-btn>
         </div>
     </WavySection>
     <section class='sec2'>
