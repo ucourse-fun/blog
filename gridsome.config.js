@@ -13,7 +13,18 @@ module.exports = {
         typeName: 'Course', // Required
         baseDir: './content/courses', // Where .md files are located
         pathPrefix: '/courses', // Add route prefix. Optional
-        template: './src/templates/Course.vue' // Optional
+        template: './src/templates/Course.vue', // Optional,
+        refs: {
+            sections: 'Section'
+        }
+      }
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Section', // Required
+        baseDir: './content/sections', // Where .md files are located
+        create: true
       }
     },
   ]
