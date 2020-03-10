@@ -8,10 +8,8 @@ sections:
   - basic-python-section-3
 level: Basic
 topics: 
-  - Python
-  - Programming
-tags:
   - python
+  - programming
 
 ---
 
