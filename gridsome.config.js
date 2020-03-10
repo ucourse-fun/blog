@@ -18,6 +18,7 @@ module.exports = {
           sections: {
             typeName: 'Section',
           },
+          topics: 'Topic',
         }
       }
     },
@@ -38,6 +39,15 @@ module.exports = {
         baseDir: './content/units', // Where .md files are located
         pathPrefix: '/units', // Add route prefix. Optional
         //template: './src/templates/Unit.vue', // Optional,
+      }
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Topic', // Required
+        baseDir: './content/topics', // Where .md files are located
+        pathPrefix: '/topics', // Add route prefix. Optional
+        //template: './src/templates/Topic.vue', // Optional,
       }
     },
   ]
