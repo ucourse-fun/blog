@@ -48,19 +48,20 @@ export default {
           this.loading = true
           this.valid = false
           const url = 'https://script.google.com/macros/s/AKfycbxykN1-WQlfP2-qKKmJPHKLPrKgZdNe8Fcvpl61Ub5YvyCRZiwh/exec'
-          //const { data } = await axios.put('https://dry-brook-40609.herokuapp.com/v1/mailing_list', {
-            /*
-            const { data } = await axios.post('https://script.google.com/macros/s/AKfycbxykN1-WQlfP2-qKKmJPHKLPrKgZdNe8Fcvpl61Ub5YvyCRZiwh/exec', {
-              source: this.source,
-              email: this.email
-          })
-            */
-          const { data } = await axios.get(url, {
-            params: {
-              source: this.source,
-              email: this.email
-            }
-          })
+          const data = {
+            "source": this.source,
+            "email": this.email
+          }
+          const headers = {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          }
+          const options = {
+            method: 'POST',
+            headers,
+            data,
+            url,
+          }
+          const response = await axios(options)
           this.resetForm()
         }
       },
