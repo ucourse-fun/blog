@@ -28,7 +28,7 @@
     </v-navigation-drawer>
     <v-toolbar dark app color="#209CEE">
       <v-toolbar-title class='branding'>
-        UCourse
+        <g-link exact to='/'>UCourse</g-link>
       </v-toolbar-title>
       <v-spacer />
       <v-toolbar-side-icon @click="drawer = !drawer" />
@@ -96,5 +96,10 @@ export default {
 .branding {
   font-family: 'Leckerli One', cursive;
   font-size: 20pt;
+}
+
+.branding a{
+    color: white;
+    text-decoration: none;
 }
 </style>
