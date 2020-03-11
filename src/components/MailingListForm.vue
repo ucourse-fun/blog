@@ -47,9 +47,19 @@ export default {
         if(this.$refs.mailingListForm.validate() && !this.loading){
           this.loading = true
           this.valid = false
-          const { data } = await axios.put('https://dry-brook-40609.herokuapp.com/v1/mailing_list', {
+          const url = 'https://script.google.com/macros/s/AKfycbxykN1-WQlfP2-qKKmJPHKLPrKgZdNe8Fcvpl61Ub5YvyCRZiwh/exec'
+          //const { data } = await axios.put('https://dry-brook-40609.herokuapp.com/v1/mailing_list', {
+            /*
+            const { data } = await axios.post('https://script.google.com/macros/s/AKfycbxykN1-WQlfP2-qKKmJPHKLPrKgZdNe8Fcvpl61Ub5YvyCRZiwh/exec', {
               source: this.source,
               email: this.email
+          })
+            */
+          const { data } = await axios.get(url, {
+            params: {
+              source: this.source,
+              email: this.email
+            }
           })
           this.resetForm()
         }
