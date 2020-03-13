@@ -7,6 +7,12 @@
 module.exports = {
   siteName: 'UCourse',
   plugins: [
+     {
+       use: '@gridsome/plugin-google-analytics',
+       options: {
+         id: 'UA-160612435-1'
+       }
+    },
     {
       use: '@gridsome/vue-remark',
       options: {
