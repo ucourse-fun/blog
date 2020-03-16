@@ -26,7 +26,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar dark app dense inverted-scroll color="rgba(32,156,238,0.85)">
+    <v-toolbar dark app dense inverted-scroll scroll-threshold='150' color="rgba(32,156,238,0.85)">
       <v-toolbar-title class='branding'>
         UCourse
       </v-toolbar-title>
