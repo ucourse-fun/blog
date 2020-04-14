@@ -38,11 +38,6 @@
       <slot/>
       </v-container>
     </v-content>
-    <!--
-    <div class="custom-layout">
-      <slot/>
-    </div>
-    -->
   </v-app>
 </template>
 
