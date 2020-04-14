@@ -31,6 +31,15 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
+        typeName: 'Braindump', // Required
+        baseDir: './content/braindumps', // Where .md files are located
+        pathPrefix: '/braindumps', // Add route prefix. Optional
+        template: './src/templates/Braindump.vue', // Optional,
+      }
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
         typeName: 'Section', // Required
         baseDir: './content/sections', // Where .md files are located
         refs: {
