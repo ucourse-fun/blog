@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@gridsome/vue-remark": "^0.1.10",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
     "vuetify": "1.5.22",
